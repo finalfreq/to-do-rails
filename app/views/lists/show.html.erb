@@ -2,3 +2,6 @@
 
 
 <p><%= link_to "Return to lists", lists_path %></p>
+<p><%= link_to "Delete", list_path(@list),
+                         :data => {:confirm => "You sure?",
+                                   :method => "delete"} %></p>
